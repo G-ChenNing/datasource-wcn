@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.github.wangchenning.autoConfig.DateSourceAutoConfig,\
+com.github.wangchenning.autoConfig.DynamicDataSourceRegister

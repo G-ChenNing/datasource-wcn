@@ -39,11 +39,9 @@ public class DynamicDataSourceContextHolder {
     }
 
     /**
-     * 判断指定DataSrouce当前是否存在
-     *
-     * @param  dataSourceId
-     * @deprecated 说明
-     * @return
+     * @param dataSourceId
+     * @deprecated 判断指定DataSrouce当前是否存在
+     * @return boolean
      */
     public static boolean containsDataSource(String dataSourceId){
         return dataSourceIds.contains(dataSourceId);

@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.github.g-chenning</groupId>
     <artifactId>datasource-wcn</artifactId>
-    <version>0.0.1-RELEASE</version>
+    <version>0.0.13-RELEASE</version>
     <name>datasource-wcn</name>
     <description>datasource-wcn</description>
     <url>https://github.com/G-ChenNing/JDBC-yml-Quick</url>
@@ -121,7 +121,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.9.1</version>
+                        <version>3.1.0</version>
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
