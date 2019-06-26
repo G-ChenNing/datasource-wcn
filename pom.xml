@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.github.g-chenning</groupId>
     <artifactId>datasource-wcn</artifactId>
-    <version>0.0.13-RELEASE</version>
+    <version>0.0.2-RELEASE</version>
     <name>datasource-wcn</name>
     <description>datasource-wcn</description>
     <url>https://github.com/G-ChenNing/JDBC-yml-Quick</url>
@@ -19,8 +19,15 @@
     </properties>
 
     <dependencies>
-
-
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>

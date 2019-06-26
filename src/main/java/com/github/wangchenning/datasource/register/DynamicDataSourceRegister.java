@@ -1,4 +1,4 @@
-package com.github.wangchenning.autoConfig;
+package com.github.wangchenning.datasource.register;
 
 import com.github.wangchenning.datasource.config.DynamicDataSourceContextHolder;
 import com.github.wangchenning.datasource.config.DynamicRoutingDataSource;
@@ -8,7 +8,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
-import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.context.properties.bind.Bindable;
 import org.springframework.boot.context.properties.bind.Binder;
 import org.springframework.boot.context.properties.source.ConfigurationPropertyName;
@@ -16,7 +15,6 @@ import org.springframework.boot.context.properties.source.ConfigurationPropertyN
 import org.springframework.boot.context.properties.source.ConfigurationPropertySource;
 import org.springframework.boot.context.properties.source.MapConfigurationPropertySource;
 import org.springframework.context.EnvironmentAware;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.core.env.Environment;
 import org.springframework.core.type.AnnotationMetadata;
@@ -32,8 +30,9 @@ import java.util.Map;
  * 实现 ImportBeanDefinitionRegistrar 实现数据源注册
  * 实现 EnvironmentAware 用于读取application.yml配置
  */
-@Configuration
-@AutoConfigureAfter(DateSourceAutoConfig.class)
+
+//@AutoConfigureAfter(DataSourceAutoConfig.class)
+//@ConditionalOnBean({DynamicDataSourceAnnotationAdvisor.class})
 public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar, EnvironmentAware {
 
     private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceRegister.class);
